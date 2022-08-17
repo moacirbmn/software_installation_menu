@@ -34,7 +34,7 @@ case $opcao in
       		apt-get remove docker docker-engine docker.io containerd runc
 			apt-get update
 			clear
-			apt-get install ca-certificates curl gnupg lsb-release
+			apt-get install ca-certificates curl gnupg lsb-release -y
 
 		echo "Adicionando a chave GPG oficial do Docker"
 			mkdir -p /etc/apt/keyrings
