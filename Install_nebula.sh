@@ -70,7 +70,7 @@ case $opcao in
 			docker compose version
 		echo "Caso seja necessario outra versão, utilize o comando abaixo"
 		echo "apt-get install docker-compose-plugin=<VERSION_STRING>"
-		echo "onde <VERSION_STRING> é, por exemplo, 2.3.3~ubuntu-focal"
+		echo "onde <VERSION_STRING> é, por exemplo, 2.3.3~ubuntu-focal";;
 
 
 	A)
