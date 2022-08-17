@@ -47,7 +47,7 @@ case $opcao in
 		echo "Instalando Docker Engine"
 			apt-get update
 			clear
- 			apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+ 			apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 			clear
 
 		echo "Criando vm de Hello-word"
@@ -60,7 +60,7 @@ case $opcao in
 			clear
 
 		echo "Instalando pacote"
-			apt-get install docker-compose-plugin
+			apt-get install docker-compose-plugin -y
 			clear
 
 		echo "Listando versões do repositorio"
