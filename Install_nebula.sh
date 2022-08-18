@@ -7,6 +7,7 @@ echo "==========================================================
 
 1 - Docker Engine
 2 - Docker compose
+3 - Zerotier
 
 A - Atualizar programas instalados
 
@@ -72,6 +73,15 @@ case $opcao in
 		echo "apt-get install docker-compose-plugin=<VERSION_STRING>"
 		echo "onde <VERSION_STRING> é, por exemplo, 2.3.3~ubuntu-focal";;
 
+	3)
+		echo "Update"
+			apt-get update
+			clear
+
+		echo "Instalando pacote"
+			curl -s 'https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg' | gpg --import && \
+			if z=$(curl -s 'https://install.zerotier.com/' | gpg); then echo "$z" | sudo bash; fi			
+			clear;;
 
 	A)
 			apt update
